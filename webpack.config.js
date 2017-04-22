@@ -49,14 +49,6 @@ module.exports = function(env) {
           exclude: '/node_modules/',
         },
         {
-          test: /\.woff(\?.+)?\d?$/, // allow for querystring like fontello uses
-          loaders: ['url-loader?limit=10000&mimetype=application/font-woff&name=[name].[ext]'],
-        },
-        {
-          test: /\.(ttf(\?.+)?|eot(\?.+)?|svg(\?.+)?)$/, // allow for querystring like fontello uses
-          loaders: ['file-loader?name=/fonts/[name].[ext]'],
-        },
-        {
           test: /\.css$/,
           use: extractCSS.extract({
             use: [

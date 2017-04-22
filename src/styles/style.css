@@ -1,7 +1,141 @@
-body {
-    background-color: black;
-    color: #fff;
+@font-face {
+    font-family: 'LaneNarrowRegular';
+    src: url('./fonts/LANENAR_-webfont.eot');
+    src: url('./fonts/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/LANENAR_-webfont.woff') format('woff'),
+         url('./fonts/LANENAR_-webfont.ttf') format('truetype'),
+         url('./fonts/LANENAR_-webfont.svg#LaneNarrowRegular') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
+
 
 /* Components */
 @import "../components/Nav/style.css";
+
+
+body{
+	background:url('../img/debut_light.png');
+	font: 18px/27px 'LaneNarrowRegular', Arial, sans-serif;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.heading{
+    margin:0;
+    padding:0;
+}
+
+/* sticky */
+
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.wrap {
+    height: auto !important;
+    margin: 0 auto -80px;
+    min-height: 100%;
+}
+
+#push, #footer {
+    height: 80px;
+}
+
+#footer {
+    background:url('../img/footer-border.png');
+	height:80px;
+}
+
+#footer .container{
+	bottom:-25px;
+	position:relative;
+	color:#000;
+}
+
+.top-border{
+	background:url('../img/top-order.png');
+	float: left;
+    height: 81px;
+    width: 100%;
+}
+
+.bottom-border{
+	background:url('../img/bottom-border.png');
+	height:116px;
+	position: relative;
+	width:100%;
+    float:left;
+    top:-25px;
+}
+
+.header-content{
+    float: left;
+    position: relative;
+    width: 100%;
+    top:-20px;
+}
+
+.logo{
+	max-width:495px;
+	max-height:195px;
+	position: relative;
+	margin-left:15px;
+	float:left;
+    img{
+        width: 100%;
+    }
+}
+
+.crookedSpace img{
+	max-width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	position:relative;
+}
+
+.Details{
+	float:right;
+	margin-right:20px;
+	font-size:24px;
+	margin-top: 60px;
+}
+
+.ContactDetail{
+	text-align: right;
+}
+
+.ContactDetail li a{
+	color:#000;
+	text-decoration: none;
+	font: 24px/28px 'LaneNarrowRegular',Arial,sans-serif;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, .5);
+    filter: dropshadow(color=#000000, offx=0, offy=0);
+}
+
+.ContactDetail li{
+	list-style:none;
+}
+
+.detail-icon{
+	background-image:url('../img/detailsSprite.png');
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    top: 6px;
+}
+
+.github{ background-position: 0 0; width: 16px; height: 16px; }
+.email{ background-position: 0 -66px; width: 16px; height: 13px; }
+.linkedin{ background-position: 0 -129px; width: 16px; height: 16px; }
